@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/sstasny/react-todo-list/static/css/main.64584ac1.chunk.css",
+    "main.js": "/sstasny/react-todo-list/static/js/main.9fd5dab2.chunk.js",
+    "main.js.map": "/sstasny/react-todo-list/static/js/main.9fd5dab2.chunk.js.map",
+    "runtime-main.js": "/sstasny/react-todo-list/static/js/runtime-main.d00e955f.js",
+    "runtime-main.js.map": "/sstasny/react-todo-list/static/js/runtime-main.d00e955f.js.map",
+    "static/js/2.b0ebaed3.chunk.js": "/sstasny/react-todo-list/static/js/2.b0ebaed3.chunk.js",
+    "static/js/2.b0ebaed3.chunk.js.map": "/sstasny/react-todo-list/static/js/2.b0ebaed3.chunk.js.map",
+    "index.html": "/sstasny/react-todo-list/index.html",
+    "precache-manifest.e55ed0628e19f10d8ac3edeb012ba784.js": "/sstasny/react-todo-list/precache-manifest.e55ed0628e19f10d8ac3edeb012ba784.js",
+    "service-worker.js": "/sstasny/react-todo-list/service-worker.js",
+    "static/css/main.64584ac1.chunk.css.map": "/sstasny/react-todo-list/static/css/main.64584ac1.chunk.css.map",
+    "static/js/2.b0ebaed3.chunk.js.LICENSE.txt": "/sstasny/react-todo-list/static/js/2.b0ebaed3.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/sstasny/react-todo-list/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d00e955f.js",
+    "static/js/2.b0ebaed3.chunk.js",
+    "static/css/main.64584ac1.chunk.css",
+    "static/js/main.9fd5dab2.chunk.js"
+  ]
+}
