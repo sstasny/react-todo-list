@@ -1,10 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import ListItems from './ListItems'
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faTrash } from '@fortawesome/free-solid-svg-icons'
-import * as ReactBootStrap from "react-bootstrap"
+import ListItems from './ListItems';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
+import * as ReactBootStrap from "react-bootstrap";
+import { Switch, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Contacts from './components/Contacts';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+
+
 
 library.add(faTrash)
 
@@ -70,21 +77,21 @@ class App extends React.Component {
   }
  render(){
   return (
+    <div>
+      <div>
+        <div>
+      <Navbar />
+      </div>
+      <Switch>
+        <Route path="/Contacts"  component={Contacts}/>
+        <Route path="/Navbar"  component={Navbar}/>
+
+      </Switch>
+      </div>
+
   
 
     <div className="App">
-      <nav>
-      <ReactBootStrap.Navbar bg="danger" expand="lg">
-    <ReactBootStrap.Navbar.Brand href="#home">TASK</ReactBootStrap.Navbar.Brand>
-    <ReactBootStrap.Navbar.Toggle aria-controls="basic-navbar-nav" />
-    <ReactBootStrap.Navbar.Collapse id="basic-navbar-nav">
-      <ReactBootStrap.Nav className="mr-auto">
-        <ReactBootStrap.Nav.Link href="#home">Home</ReactBootStrap.Nav.Link>
-        <ReactBootStrap.Nav.Link href="#link">Link</ReactBootStrap.Nav.Link>
-      </ReactBootStrap.Nav>
-    </ReactBootStrap.Navbar.Collapse>
-  </ReactBootStrap.Navbar>
-  </nav>
       <header>
         <form id="to-do-form" onSubmit={this.addItem}>
           <input type="text" placeholder="Enter task" value= {this.state.currentItem.text} onChange={this.handleInput}></input>
@@ -95,6 +102,7 @@ class App extends React.Component {
           <ListItems items={this.state.items} deleteItem={this.deleteItem} setUpdate={this.setUpdate}/>
         
       </header>
+    </div>
     </div>
   );
  }
