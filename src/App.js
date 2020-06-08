@@ -4,9 +4,10 @@ import ListItems from './ListItems';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import * as ReactBootStrap from "react-bootstrap";
-import { Switch, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Contacts from './components/Contacts';
+import { Switch, Route, Link} from 'react-router-dom';
+import Navbar from './Navbar';
+import Todos from './Todos';
+import Contacts from './Contacts';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -78,18 +79,13 @@ class App extends React.Component {
  render(){
   return (
     <div>
-      <div>
-        <div>
-      <Navbar />
-      </div>
-      <Switch>
-        <Route path="/Contacts"  component={Contacts}/>
-        <Route path="/Navbar"  component={Navbar}/>
-
-      </Switch>
-      </div>
-
+<Navbar />
+<Switch>
   
+  <Route path="/Todos" component={Todos}/>
+  <Route path="/Contacts" component={Contacts}/>
+
+</Switch>
 
     <div className="App">
       <header>
@@ -107,6 +103,9 @@ class App extends React.Component {
   );
  }
 }
+
+
+
 
 
 export default App;

@@ -10,7 +10,7 @@ function ListItems(props){
    {
        return <div className="list" key={item.key}>
      <p>
-         <input id= "checkbox" type="checkbox"/>
+         <input id="checkbox" type="checkbox"/>
          <input type="text" id={item.key} value={item.text} onChange={(e)=>{
              props.setUpdate(e.target.value,item.key)}}/>
         <span>
@@ -21,8 +21,7 @@ function ListItems(props){
         </span>
      </p>
      
-    </div>
-    })
+    </div>})
     return <div>
         <FlipMove duration={300} easing="ease-in-out">
         {listItems}
@@ -32,3 +31,4 @@ function ListItems(props){
   }
 
   export default ListItems;
+
