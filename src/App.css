@@ -181,7 +181,7 @@ input.error {
 }
 
 .createAccount button:hover {
-  color: #519e8a;
+  color: black;
   background-color: #fff;
   border: 2px solid black;
 }
