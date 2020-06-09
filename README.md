@@ -21,5 +21,3 @@ ideas for improvement
 . Adding more to todo list that will give users a history of tasks.
 
 . Adding a calendar page to have a todo list fo rthe whole month.
-
-User Stories 
