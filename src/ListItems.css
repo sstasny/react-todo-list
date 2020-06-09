@@ -3,13 +3,16 @@
     width: 300px;
     margin: 20px auto;
     height: 50px;
-    background-color: black;
+    background-color:black;
     border-radius: 5px;
 }
 .list p{
-    padding: 10px;
+    padding: 8px ;
     position: relative;
     transition: ease-in-out;
+    margin: 25px;
+    
+   
 }
 .list p input{
     background-color: transparent;
@@ -25,7 +28,7 @@
     right: 10px;
 }
 .faicons{
-    margin: 0 5px;
+    margin: 8px;
     font-size: 15px;
     cursor: pointer;
 }
@@ -43,6 +46,6 @@
     opacity: 0.01;
     transition: opacity 300ms ease-in
 }
-.list #checkbox {
-    margin: 10px;
+.list  #checkbox {
+  margin: 10px;
 }
